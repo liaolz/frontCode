@@ -1,0 +1,34 @@
+<!-- 声明文档的类型 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习</title>
+</head>
+<body>
+    <!-- <script>
+        alert('hello js');
+    </script> -->
+
+
+    <div id="app">
+        <h1>{{massage}}</h1>
+        <h1>{{count}}</h1>
+    </div>
+
+    <script type="module">
+        import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js';
+
+
+        createApp({
+            data(){
+                return {
+                    massage:'Hello Vue',
+                    count:100
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>
