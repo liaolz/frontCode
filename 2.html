@@ -8,10 +8,30 @@
         span{
             color:burlywood;
         }
+        .cls{
+            color:aquamarine;
+        }
+        #test{
+            color:#0000ff;
+        }
+        p{
+            /* 行高 */
+            line-height: 2;
+            /* 首行缩进 */
+            text-indent: 2em;
+        }
+
+        /* 整体版面居中显示 */
+        #content-container{ 
+            width: 70%;
+            margin-left: auto;/*居中显示 */
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>
-    <!-- 基本标签，h1最大，h6最小 -->
+    <div id="content-container">
+        <!-- 基本标签，h1最大，h6最小 -->
      <h1>hello</h1>
 
      <!-- css引入 
@@ -20,11 +40,28 @@
     <span style="color:red;">time</span><hr>
     <br>
     <span>666</span>
-    <!-- css选择器 
+    <span class="cls">666</span>
+    <span class="cls" id="test">666</span>
+    <!-- css选择器 ,在style标签中定义
     元素名称{},选择所有该元素
     .class属性值{},选择页面上所有class属性是calss属性值的元素
-    #id属性值{},
+    #id属性值{},选择页面上所有id属性是id属性值的元素
     -->
 
+    <br>
+
+    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test</strong>
+
+
+    <p>There are a couple of issues in this sentence. First, “love” should be “loves” because the subject “heart” is singular,
+         so the verb needs to be in the third - person singular form. Second, I think you might mean “world” instead of “word”. 
+         The corrected sentence would be: “I have a heart that loves the world.” 
+         Keep up the good work! Now, could you try to use this corrected sentence in a short paragraph?</p>
+
+    <!-- 引入图片 
+     使用img标签  src属性指定路径：1.绝对路径：绝对磁盘路径(不推荐) 绝对网络路径  2.相对路径 ./当前目录  ../上一级目录
+    -->
+
+    </div>
 </body>
 </html>
