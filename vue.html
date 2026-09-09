@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+</head>
+<body>
+    <div id="app">
+         <h1>{{messagge}}</h1>  <!--通过插值表达式渲染页面 -->
+         <h1>{{count}}</h1>
+    </div>
+
+    <script type="module">
+        //引入Vue模块
+        import {createApp} from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+
+        //创建Vue实例，控制视图元素
+        createApp({
+            //准备数据
+            data(){
+                return {
+                    messagge :'hello vue',
+                    count:100
+                }
+            }
+        }).mount('#app')
+    </script>
+</body>
+</html>
